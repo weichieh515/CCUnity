@@ -5,6 +5,18 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { UserLogin } from '../pages/user/user-login/user-login';
+import { CourseList } from '../pages/course/course-list/course-list';
+import { CourseTabs } from '../pages/course/course-tabs/course-tabs';
+import { CourseAnnouncement } from '../pages/course/course-announcement/course-announcement';
+import { CourseAssignment } from '../pages/course/course-assignment/course-assignment';
+import { CourseMaterial } from '../pages/course/course-material/course-material';
+import { CourseScore } from '../pages/course/course-score/course-score';
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -12,7 +24,14 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    UserLogin,
+    CourseList,
+    CourseTabs,
+    CourseAnnouncement,
+    CourseAssignment,
+    CourseMaterial,
+    CourseScore
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -23,7 +42,14 @@ import { TabsPage } from '../pages/tabs/tabs';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    UserLogin,
+    CourseTabs,
+    CourseList,
+    CourseAnnouncement,
+    CourseAssignment,
+    CourseMaterial,
+    CourseScore
   ],
   providers: []
 })

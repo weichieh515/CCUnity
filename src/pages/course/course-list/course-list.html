@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>Courses</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      Action
+    </ion-list-header>
+    <ion-item>Terminator II</ion-item>
+    <ion-item>The Empire Strikes Back</ion-item>
+    <ion-item (click)="OpenPage($event, 'MIS')">
+      <h1>MIS</h1>
+      <h3>
+        <ion-icon name="calendar"></ion-icon> &nbsp; tue, thu &nbsp;
+        <ion-icon name="time"></ion-icon> &nbsp; 08:45~10:00
+      </h3>
+      <p>
+        <ion-icon name="pin"></ion-icon> &nbsp; 管理學院101
+      </p>
+      <ion-icon name='ios-arrow-forward' item-right></ion-icon>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

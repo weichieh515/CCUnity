@@ -3,6 +3,10 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 
 import { TabsPage } from '../pages/tabs/tabs';
+import { UserLogin } from '../pages/user/user-login/user-login';
+import { CourseList } from '../pages/course/course-list/course-list';
+
+
 
 
 @Component({
@@ -12,7 +16,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage: any = TabsPage;
+  rootPage: any = CourseList;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -23,7 +27,9 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: TabsPage }
+      { title: 'Hello Ionic', component: TabsPage },
+      { title: 'Login', component: UserLogin},
+      { title: 'Courses' , component: CourseList}
     ];
   }
 
