@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { CourseList } from '.course-list/course-list';
+import { CourseTabs } from '../course-tabs/course-tabs';
+import { CourseList } from '../course-list/course-list';
 /*
   Generated class for the CourseAnnouncement page.
 
@@ -12,16 +13,17 @@ import { CourseList } from '.course-list/course-list';
   templateUrl: 'course-announcement.html'
 })
 export class CourseAnnouncement {
-
+  public courseTabs: CourseTabs;s
   constructor(public navCtrl: NavController) {}
 
   ionViewDidLoad() {
     console.log('Hello CourseAnnouncement Page');
   }
 
-  goBack() {
+ goBack() {
     console.log('back');
-     //this.nav.setRoot(CourseList);
+    this.courseTabs.goBack();
+    //this.nav.setRoot(CourseList);
  }
 
 }
